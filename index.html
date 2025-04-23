@@ -4,13 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Web - Panel de control</title>
+  <title>Web - Sistemas Informaticos</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
   
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/logo_scorpio.ico" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -81,17 +81,37 @@
   <main class="main">
 
     <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+    <section id="hero" class="hero section dark-background" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; padding: 2rem; gap: 2rem;">
 
-      <img src="assets/img/solucion2.jpg" alt="" data-aos="fade-in" class="">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <h2>L.M.</h2>
-        <p>Soy <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer">Diseñador</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      <!-- Parte 1: Video -->
+      <div style="flex: 1 1 500px; max-width: 800px;">
+        <video id="hero-video" autoplay loop playsinline controls style="width: 100%; height: auto; border-radius: 12px;">
+          <source src="assets/img/elmejor.mp4" type="video/mp4">
+          Tu navegador no soporta el video.
+        </video>
       </div>
-
-    </section><!-- /Hero Section -->
-
+    
+      <!-- Parte 2: Texto -->
+      <div class="container" data-aos="fade-up" data-aos-delay="100" style="flex: 1 1 400px; max-width: 600px; color: white;">
+        <h3>“Soluciones digitales para tu negocio, soporte confiable para tu PC”</h3>
+        <h2>L.M.</h2>
+        <p>
+          Soy <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer">Diseñador</span>
+          <span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
+        </p>
+      </div>
+    
+    </section>
+    
+    <script>
+      document.addEventListener('click', () => {
+        const video = document.getElementById('hero-video');
+        video.muted = false;
+        video.play().catch(err => {
+          console.log("No se pudo reproducir el video con sonido:", err);
+        });
+      }, { once: true });
+    </script>
     <!-- About Section -->
     <section id="about" class="about section">
 
@@ -105,26 +125,26 @@
 
         <div class="row gy-4 justify-content-center">
           <div class="col-lg-4">
-            <img src="assets/img/mio.jpg" class="img-fluid" alt="">
+            <img src="assets/img/mio2.jpeg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 content">
-            <h2>SOLUCIONES INFORMATICAS &amp; L&M.</h2>
+            <h2>SOLUCIONES INFORMATICAS &amp; L-M.</h2>
             <p class="fst-italic py-3">
               Desarrollo de páginas web.<br>
               Creación de sitios web a medidas, optimizados con diseño responsive.<br>
               Desarrollo de Sistemas de gestión a medida para empresas de diversos sectores.<br>
-              Soporte técnico: Diagnóstico y reparación de equipos informáticos, mantenimiento preventivo y correctivo.
+              Soporte técnico: Diagnóstico y reparación de equipos informáticos, presencial y remoto, mantenimiento preventivo y correctivo.
             </p>
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+591 76618791</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+591 63371468</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Santa Cruz-Bolivia</span></li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>lm.informaticaweb@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>limber.montano40@gmail.com</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Disponible</span></li>
                 </ul>
               </div>
@@ -139,121 +159,70 @@
 
     </section><!-- /About Section -->
 
-    <!-- Stats Section -->
-    <section id="stats" class="stats section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Happy Clients</strong> <span>consequuntur quae</span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Projects</strong> <span>adipisci atque cum quia aut</span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hours Of Support</strong> <span>aut commodi quaerat</span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-people"></i>
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hard Workers</strong> <span>rerum asperiores dolor</span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Stats Section -->
-
     <!-- Skills Section -->
     <section id="skills" class="skills section light-background">
 
       <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Habilidades</h2>
-        <p>Habilidades adquiridas.</p>
+      <div class="container">
+        <h2>HABILIDADES</h2>
+        <h3>DESARROLLO WEB.</h3>
       </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row skills-content skills-animation">
-
+      <div class="container">
+        <div class="row">
           <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+            <div>
+              <span>*HTML5 / CSS3 / JavaScript</span> 
             </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>CSS</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+            <div>
+              <span>*Diseño responsivo</span> 
             </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>JavaScript</span> <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+            <div>
+              <span>*Frameworks: Bootstrap </span>
             </div><!-- End Skills Item -->
-
           </div>
-
           <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>PHP</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+            <div>
+              <span>*Django / Python</span> 
             </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>WordPress/CMS</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+            <div>
+              <span>*Optimización</span> 
             </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Photoshop</span> <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+            <div>
+              <span>*Configuracion</span> 
             </div><!-- End Skills Item -->
-
           </div>
-
         </div>
-
       </div>
-
+      <div class="container">
+        <h3>SOPORTE TECNICO.</h3>
+      </div><!-- End Section Title -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div>
+              <span>*Mantenimiento preventivo y correctivo</span> 
+            </div><!-- End Skills Item -->
+            <div>
+              <span>*Formateo y optimización</span> 
+            </div><!-- End Skills Item -->
+            <div>
+              <span>*Instalación de sistemas operativos y software</span>
+            </div><!-- End Skills Item -->
+          </div>
+          <div class="col-lg-6">
+            <div>
+              <span>*Reparación de hardware</span> 
+            </div><!-- End Skills Item -->
+            <div>
+              <span>*Soporte, tecnico/remoto y presencial</span> 
+            </div><!-- End Skills Item -->
+            <div>
+              <span>*Software/Hardware</span> 
+            </div><!-- End Skills Item -->
+          </div>
+        </div>
+      </div>
     </section><!-- /Skills Section -->
-
-
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section light-background">
@@ -290,17 +259,6 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/web5.png" class="img-fluid img-uniform" alt="">
-                <div class="portfolio-info">
-                  <h4>sistema1</h4>
-                  <p>Prediseño de sistema Web</p>
-                  <!-- <a href="assets/img/portfolio/product-1.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> -->
-                  <a href="https://startbootstrap.com/previews/sb-admin-angular" title="More Details" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
 
             <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-branding">
               <div class="portfolio-content h-100">
@@ -326,18 +284,7 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/web3.png" class="img-fluid img-uniform" alt="">
-                <div class="portfolio-info">
-                  <h4>App 2</h4>
-                  <p>Ejemplo de pagina Web</p>
-                  <!-- <a href="assets/img/portfolio/app-2.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> -->
-                  <a href="https://startbootstrap.com/previews/grayscale/" title="More Details" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
+            
             <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-product">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/web8.png" class="img-fluid img-uniform" alt="">
@@ -362,17 +309,6 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-2.jpg" class="img-fluid img-uniform" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 2</h4>
-                  <p>Ejemplo de pagina Web</p>
-                  <!-- <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> -->
-                  <a href="portfolio-details.html" title="More Details" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
 
             <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
@@ -410,17 +346,6 @@
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-3.jpg" class="img-fluid img-uniform" alt="">
-                <div class="portfolio-info">
-                  <h4>Books 3</h4>
-                  <p>Ejemplo de pagina Web</p>
-                  <!-- <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> -->
-                  <a href="portfolio-details.html" title="More Details" class="details-link" v><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
             <div class="col-lg-3 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
                 <img src="assets/img/portfolio/web6.png" class="img-fluid img-uniform" alt="">
@@ -466,31 +391,24 @@
               </div>
             </div><!-- End Portfolio Item -->
           </div><!-- End Portfolio Container -->
-
         </div>
-
       </div>
-
     </section><!-- /Portfolio Section -->
 
     <!-- Services Section formulario2-->
     <section id="services" class="services section">
-
-
       <div class="container section-title" data-aos="fade-up">
-        <h2>Servicios</h2>
-        <h5>Diseño y desarrollo web.<br>
-          Sistemas de gestión a medida. <br>
-          Mantenimiento y soporte técnico para equipos informáticos</h5>
+        <h2>Servicios Tecnicos y garantias.</h2>
+        <h5>Trabajo confiable a un solo clic.<br>
+          Garantía de 10 dias por servicio(si falla reparo sin costo). <br>
+          Soporte tecnico a domicilio o remoto sin moverte de casa.</h5>
       </div><!-- End Section Title -->
-
       <div class="container">
         <div class="row">
           <div class="col-md-3" >
             <p>Soporte tecnico-<a href="assets/img/services/1.jpg" title="Pc" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             </p>
             <img src="assets/img/services/1.jpg" class="img-fluid img-uniform" alt="">
-
           </div>
           <div class="col-md-3" >
             <p>Manteminiento-<a href="assets/img/services/2.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a></p>
@@ -512,7 +430,6 @@
             <p>Restablecer conexion de redes-<a href="assets/img/services/6.jpg" title="Pc" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             </p>
             <img src="assets/img/services/6.jpg" class="img-fluid img-uniform" alt="">
-
           </div>
           <div class="col-md-3" >
             <p>Codificacion-<a href="assets/img/services/7.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a></p>
@@ -522,8 +439,6 @@
             <p>Redes-<a href="assets/img/services/8.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             </p>
             <img src="assets/img/services/8.jpg" class="img-fluid img-uniform" alt="">
-
-
           </div>
           <div class="col-md-3">
             <p>Mantenimiento-<a href="assets/img/services/9.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a></p>
@@ -546,8 +461,6 @@
             <p>Formateo-<a href="assets/img/services/12.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             </p>
             <img src="assets/img/services/12.jpg" class="img-fluid img-uniform" alt="">
-
-
           </div>
           <div class="col-md-3">
             <p>Memoria Ram-<a href="assets/img/services/13.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a></p>
@@ -560,7 +473,6 @@
             <p>Prueba de disco duro-<a href="assets/img/services/14.jpg" title="Pc" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             </p>
             <img src="assets/img/services/14.jpg" class="img-fluid img-uniform" alt="">
-
           </div>
           <div class="col-md-3" >
             <p>Pruebas-<a href="assets/img/services/15.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a></p>
@@ -570,8 +482,6 @@
             <p>Diagnostico-<a href="assets/img/services/16.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
             </p>
             <img src="assets/img/services/16.jpg" class="img-fluid img-uniform" alt="">
-
-
           </div>
           <div class="col-md-3">
             <p>Desensamblar una portatil-<a href="assets/img/services/17.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a></p>
@@ -579,9 +489,7 @@
           </div>
         </div>
       </div>
-
     </section><!-- /Services Section -->
-
     <!-- Contact Section -->
     <section id="contact" class="contact section">
 
@@ -625,24 +533,19 @@
               </div>
             </div>
           </div>
-
           <div class="col-lg-7">
               <p>SERVICIOS ADICIONALES.<a href="assets/img/services/SOPORTE TECNICO.png" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a></p>
                 <img src="assets/img/services/SOPORTE TECNICO.png" class="img-fluid img-uniform" alt="">
               <br>
-              <div style="text-align: center;">
-                <a
-                class="btn btn-success btn-lg"
-                style="float: center"
-                href="https://api.whatsapp.com/send?phone=59163371468" target="_blank"
-                ><img src="assets/img/services/whatsapp.png" style="width: 20px; height: 20px;" alt=""/> CONSULTAS WHATSAPP</a
-                >
-              </div>
-                
-
+              <a
+                class="btn-whatsapp-flotante btn btn-success btn-lg"
+                href="https://api.whatsapp.com/send?phone=59163371468"
+                target="_blank"
+                title="Consultas por WhatsApp"
+              >
+                <img src="assets/img/services/whatsapp.png" style="width: 20px; height: 20px; margin-right: 5px;" alt=""/> CONSULTAS WHATSAPP
+              </a>
           </div>
-          
-          
   <script>
     document.querySelector('.php-email-form').addEventListener('submit', function(e) {
       e.preventDefault(); // Previene el envío normal del formulario
@@ -689,9 +592,7 @@
       <div class="copyright text-center ">
         <p>© <strong class="px-1 sitename">Portafolio</strong> <span>LM.-2024</span></p>
       </div>
-
     </div>
-
   </footer>
 
   <!-- Scroll Top -->
@@ -714,7 +615,6 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>
